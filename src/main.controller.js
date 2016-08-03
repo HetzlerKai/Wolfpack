@@ -7,8 +7,10 @@ sap.ui.define([
 			jQuery.sap.includeStyleSheet("src/css/style.css");
 		},
 
-		onAfterRendering: function(){
-			
+		onLogInPressed: function(oEvent){
+			var oApp = this.getView().getParent();
+
+			oApp.to("packView");
 		}
 
 	});

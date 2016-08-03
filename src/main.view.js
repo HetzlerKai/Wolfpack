@@ -17,7 +17,13 @@ sap.ui.define([
 					new sap.m.Input({
 						placeholder: "Passwort",
 						type: sap.m.InputType.Password
-					})
+					}).addStyleClass("10PxTop"),
+					new sap.m.Button({
+						text: "Login",
+						width: "100%",
+						type: "Emphasized",
+						press: [oController.onLogInPressed, oController]
+					}).addStyleClass("10PxTop")
 				]
 			}).addStyleClass("LogOnForm");
 

@@ -8,7 +8,7 @@
 
 		<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
 				id="sap-ui-bootstrap"
-				data-sap-ui-libs="sap.m"
+				data-sap-ui-libs="sap.m, sap.uxap"
 				data-sap-ui-theme="sap_bluecrystal">
 		</script>
 
@@ -23,11 +23,19 @@
 				oApp = new sap.m.App().addStyleClass("logOnBackground");
 				
 				oPage = sap.ui.view({
+					id: "main",
 					viewName:"src.main", 
 					type:sap.ui.core.mvc.ViewType.JS
 				});
-				
+
+				oPagePackView = sap.ui.view({
+					id: "packView",
+					viewName:"src.packView", 
+					type:sap.ui.core.mvc.ViewType.JS
+				});
+
 				oApp.addPage(oPage);
+				oApp.addPage(oPagePackView);
 				oApp.placeAt("content");
 				
 			})();
