@@ -1,0 +1,11 @@
+.LogOnForm{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40%;
+	width: 30%;
+}
+
+.logOnBackground{
+	background-size: 100%;
+    background-image: url("https://static1.squarespace.com/static/551ae31de4b068596a443c3e/551bc03ce4b0eeef9d455e58/551bc044e4b0eeef9d455e6c");
+}

@@ -14,13 +14,13 @@
 
 		<script>
 		
-			/*(function(){
+			(function(){
 				
 				var oApp, oPage;
 				
 				sap.ui.localResources("src");
 				
-				oApp = new sap.m.App();
+				oApp = new sap.m.App().addStyleClass("logOnBackground");
 				
 				oPage = sap.ui.view({
 					viewName:"src.main", 
@@ -30,13 +30,12 @@
 				oApp.addPage(oPage);
 				oApp.placeAt("content");
 				
-			})();*/
+			})();
 
 		</script>
 
 	</head>
 	<body class="sapUiBody" role="application">
 		<div id="content"></div>
-		<h1> Wolfpack </h1>
 	</body>
 </html>
